@@ -7,7 +7,7 @@ provider "azurerm" {
   features {}
 }
 ```
-#### Create a file main.tf with below content
+#### terraform-iaac
 ```
 module "aks" {
     source                                  =   "../"
@@ -27,7 +27,7 @@ module "aks" {
 ```
 
 
-## Below is the output you can take
+## Get the output
 ```
 output "cluster_id" {
   value = module.aks.cluster_id
