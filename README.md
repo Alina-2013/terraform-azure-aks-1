@@ -7,10 +7,10 @@ provider "azurerm" {
   features {}
 }
 ```
-#### terraform-iaac
+## terraform-iaac
 ```
 module "aks" {
-    source                                  =   "../"
+    source                                  =   "Bekzhan-osh/aks/azure"
     cluster_name                            =   "example-aks1"
     kubernetes_version                      =   "1.18.4"
     node_pool_name                          =   "node1"
